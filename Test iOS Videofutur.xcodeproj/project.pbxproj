@@ -1,0 +1,785 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B588FC827B119C100C9AA3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B588FC727B119C100C9AA3E /* AppDelegate.swift */; };
+		4B588FCA27B119C100C9AA3E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B588FC927B119C100C9AA3E /* SceneDelegate.swift */; };
+		4B588FCF27B119C100C9AA3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B588FCD27B119C100C9AA3E /* Main.storyboard */; };
+		4B588FD127B119C200C9AA3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B588FD027B119C200C9AA3E /* Assets.xcassets */; };
+		4B588FD427B119C200C9AA3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B588FD227B119C200C9AA3E /* LaunchScreen.storyboard */; };
+		4B588FDF27B119C200C9AA3E /* Test_iOS_VideofuturTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B588FDE27B119C200C9AA3E /* Test_iOS_VideofuturTests.swift */; };
+		4B588FE927B119C200C9AA3E /* Test_iOS_VideofuturUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B588FE827B119C200C9AA3E /* Test_iOS_VideofuturUITests.swift */; };
+		4B588FEB27B119C200C9AA3E /* Test_iOS_VideofuturUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B588FEA27B119C200C9AA3E /* Test_iOS_VideofuturUITestsLaunchTests.swift */; };
+		4B588FFC27B11CF600C9AA3E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B588FFB27B11CF600C9AA3E /* HomeViewController.swift */; };
+		4B588FFE27B11D0900C9AA3E /* GIFFullScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B588FFD27B11D0900C9AA3E /* GIFFullScreenViewController.swift */; };
+		4B58900127B1219900C9AA3E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B58900027B1219900C9AA3E /* SearchViewController.swift */; };
+		4B58900427B1298D00C9AA3E /* GiphyAPIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B58900327B1298D00C9AA3E /* GiphyAPIEndpoint.swift */; };
+		4B58900627B129B200C9AA3E /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B58900527B129B200C9AA3E /* NetworkRequest.swift */; };
+		4B58900827B129C600C9AA3E /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B58900727B129C600C9AA3E /* APIService.swift */; };
+		4B58900A27B129E000C9AA3E /* GiphyAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B58900927B129E000C9AA3E /* GiphyAPIError.swift */; };
+		4B58900D27B12D1600C9AA3E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4B58900C27B12D1600C9AA3E /* Alamofire */; };
+		4B58901027B12EC600C9AA3E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4B58900F27B12EC600C9AA3E /* Kingfisher */; };
+		4B7BF11827B1544600E1F71C /* RandomGIFViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7BF11727B1544600E1F71C /* RandomGIFViewModel.swift */; };
+		4B7BF12127B15A2400E1F71C /* GiphyAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7BF12027B15A2400E1F71C /* GiphyAPIService.swift */; };
+		4B7BF12327B15AAE00E1F71C /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7BF12227B15AAE00E1F71C /* Category.swift */; };
+		4B7BF12527B15C1800E1F71C /* GIFImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7BF12427B15C1800E1F71C /* GIFImageData.swift */; };
+		4B7BF12927B15CF100E1F71C /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7BF12827B15CF100E1F71C /* Images.swift */; };
+		4B7BF12F27B1671B00E1F71C /* FixedHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7BF12E27B1671B00E1F71C /* FixedHeight.swift */; };
+		4B7BF13127B16A9B00E1F71C /* GIFSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7BF13027B16A9B00E1F71C /* GIFSearchViewModel.swift */; };
+		4B7BF13327B16ABF00E1F71C /* GIFFullScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7BF13227B16ABF00E1F71C /* GIFFullScreenViewModel.swift */; };
+		4B7BF13627B16BC900E1F71C /* GIFImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7BF13527B16BC900E1F71C /* GIFImage.swift */; };
+		4B7BF13827B16BE900E1F71C /* GIFImageList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7BF13727B16BE900E1F71C /* GIFImageList.swift */; };
+		4B7BF13B27B1748C00E1F71C /* GiphySingleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7BF13A27B1748C00E1F71C /* GiphySingleResponse.swift */; };
+		4B7BF13D27B1766C00E1F71C /* GIFCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7BF13C27B1766C00E1F71C /* GIFCollectionViewCell.swift */; };
+		4B7BF13F27B1799700E1F71C /* GIFCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7BF13E27B1799700E1F71C /* GIFCellViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4B588FDB27B119C200C9AA3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B588FBC27B119C100C9AA3E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B588FC327B119C100C9AA3E;
+			remoteInfo = "Test iOS Videofutur";
+		};
+		4B588FE527B119C200C9AA3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B588FBC27B119C100C9AA3E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B588FC327B119C100C9AA3E;
+			remoteInfo = "Test iOS Videofutur";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4B588FC427B119C100C9AA3E /* Test iOS Videofutur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test iOS Videofutur.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B588FC727B119C100C9AA3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4B588FC927B119C100C9AA3E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4B588FCE27B119C100C9AA3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4B588FD027B119C200C9AA3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B588FD327B119C200C9AA3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4B588FD527B119C200C9AA3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B588FDA27B119C200C9AA3E /* Test iOS VideofuturTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Test iOS VideofuturTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B588FDE27B119C200C9AA3E /* Test_iOS_VideofuturTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_iOS_VideofuturTests.swift; sourceTree = "<group>"; };
+		4B588FE427B119C200C9AA3E /* Test iOS VideofuturUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Test iOS VideofuturUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B588FE827B119C200C9AA3E /* Test_iOS_VideofuturUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_iOS_VideofuturUITests.swift; sourceTree = "<group>"; };
+		4B588FEA27B119C200C9AA3E /* Test_iOS_VideofuturUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_iOS_VideofuturUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4B588FFB27B11CF600C9AA3E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4B588FFD27B11D0900C9AA3E /* GIFFullScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFFullScreenViewController.swift; sourceTree = "<group>"; };
+		4B58900027B1219900C9AA3E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		4B58900327B1298D00C9AA3E /* GiphyAPIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyAPIEndpoint.swift; sourceTree = "<group>"; };
+		4B58900527B129B200C9AA3E /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		4B58900727B129C600C9AA3E /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		4B58900927B129E000C9AA3E /* GiphyAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyAPIError.swift; sourceTree = "<group>"; };
+		4B7BF11727B1544600E1F71C /* RandomGIFViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomGIFViewModel.swift; sourceTree = "<group>"; };
+		4B7BF12027B15A2400E1F71C /* GiphyAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyAPIService.swift; sourceTree = "<group>"; };
+		4B7BF12227B15AAE00E1F71C /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		4B7BF12427B15C1800E1F71C /* GIFImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFImageData.swift; sourceTree = "<group>"; };
+		4B7BF12827B15CF100E1F71C /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		4B7BF12E27B1671B00E1F71C /* FixedHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedHeight.swift; sourceTree = "<group>"; };
+		4B7BF13027B16A9B00E1F71C /* GIFSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFSearchViewModel.swift; sourceTree = "<group>"; };
+		4B7BF13227B16ABF00E1F71C /* GIFFullScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFFullScreenViewModel.swift; sourceTree = "<group>"; };
+		4B7BF13527B16BC900E1F71C /* GIFImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFImage.swift; sourceTree = "<group>"; };
+		4B7BF13727B16BE900E1F71C /* GIFImageList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFImageList.swift; sourceTree = "<group>"; };
+		4B7BF13A27B1748C00E1F71C /* GiphySingleResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphySingleResponse.swift; sourceTree = "<group>"; };
+		4B7BF13C27B1766C00E1F71C /* GIFCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFCollectionViewCell.swift; sourceTree = "<group>"; };
+		4B7BF13E27B1799700E1F71C /* GIFCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFCellViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B588FC127B119C100C9AA3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B58901027B12EC600C9AA3E /* Kingfisher in Frameworks */,
+				4B58900D27B12D1600C9AA3E /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B588FD727B119C200C9AA3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B588FE127B119C200C9AA3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B588FBB27B119C100C9AA3E = {
+			isa = PBXGroup;
+			children = (
+				4B588FC627B119C100C9AA3E /* Test iOS Videofutur */,
+				4B588FDD27B119C200C9AA3E /* Test iOS VideofuturTests */,
+				4B588FE727B119C200C9AA3E /* Test iOS VideofuturUITests */,
+				4B588FC527B119C100C9AA3E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4B588FC527B119C100C9AA3E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B588FC427B119C100C9AA3E /* Test iOS Videofutur.app */,
+				4B588FDA27B119C200C9AA3E /* Test iOS VideofuturTests.xctest */,
+				4B588FE427B119C200C9AA3E /* Test iOS VideofuturUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B588FC627B119C100C9AA3E /* Test iOS Videofutur */ = {
+			isa = PBXGroup;
+			children = (
+				4B58901127B131D600C9AA3E /* Models */,
+				4B58900227B121B700C9AA3E /* Service */,
+				4B588FFF27B120E100C9AA3E /* GIF Search */,
+				4B588FF827B11CA900C9AA3E /* GIF Full Screen */,
+				4B588FF727B11CA200C9AA3E /* Home */,
+				4B588FC727B119C100C9AA3E /* AppDelegate.swift */,
+				4B588FC927B119C100C9AA3E /* SceneDelegate.swift */,
+				4B588FCD27B119C100C9AA3E /* Main.storyboard */,
+				4B588FD027B119C200C9AA3E /* Assets.xcassets */,
+				4B588FD227B119C200C9AA3E /* LaunchScreen.storyboard */,
+				4B588FD527B119C200C9AA3E /* Info.plist */,
+			);
+			path = "Test iOS Videofutur";
+			sourceTree = "<group>";
+		};
+		4B588FDD27B119C200C9AA3E /* Test iOS VideofuturTests */ = {
+			isa = PBXGroup;
+			children = (
+				4B588FDE27B119C200C9AA3E /* Test_iOS_VideofuturTests.swift */,
+			);
+			path = "Test iOS VideofuturTests";
+			sourceTree = "<group>";
+		};
+		4B588FE727B119C200C9AA3E /* Test iOS VideofuturUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4B588FE827B119C200C9AA3E /* Test_iOS_VideofuturUITests.swift */,
+				4B588FEA27B119C200C9AA3E /* Test_iOS_VideofuturUITestsLaunchTests.swift */,
+			);
+			path = "Test iOS VideofuturUITests";
+			sourceTree = "<group>";
+		};
+		4B588FF727B11CA200C9AA3E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4B588FFB27B11CF600C9AA3E /* HomeViewController.swift */,
+				4B7BF11727B1544600E1F71C /* RandomGIFViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4B588FF827B11CA900C9AA3E /* GIF Full Screen */ = {
+			isa = PBXGroup;
+			children = (
+				4B588FFD27B11D0900C9AA3E /* GIFFullScreenViewController.swift */,
+				4B7BF13227B16ABF00E1F71C /* GIFFullScreenViewModel.swift */,
+			);
+			path = "GIF Full Screen";
+			sourceTree = "<group>";
+		};
+		4B588FFF27B120E100C9AA3E /* GIF Search */ = {
+			isa = PBXGroup;
+			children = (
+				4B58900027B1219900C9AA3E /* SearchViewController.swift */,
+				4B7BF13027B16A9B00E1F71C /* GIFSearchViewModel.swift */,
+				4B7BF13C27B1766C00E1F71C /* GIFCollectionViewCell.swift */,
+				4B7BF13E27B1799700E1F71C /* GIFCellViewModel.swift */,
+			);
+			path = "GIF Search";
+			sourceTree = "<group>";
+		};
+		4B58900227B121B700C9AA3E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4B58900327B1298D00C9AA3E /* GiphyAPIEndpoint.swift */,
+				4B58900527B129B200C9AA3E /* NetworkRequest.swift */,
+				4B58900727B129C600C9AA3E /* APIService.swift */,
+				4B58900927B129E000C9AA3E /* GiphyAPIError.swift */,
+				4B7BF12027B15A2400E1F71C /* GiphyAPIService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		4B58901127B131D600C9AA3E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4B7BF13927B16BFA00E1F71C /* Data */,
+				4B7BF13427B16B9500E1F71C /* ViewModel Protocols */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4B7BF13427B16B9500E1F71C /* ViewModel Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4B7BF13527B16BC900E1F71C /* GIFImage.swift */,
+				4B7BF13727B16BE900E1F71C /* GIFImageList.swift */,
+			);
+			path = "ViewModel Protocols";
+			sourceTree = "<group>";
+		};
+		4B7BF13927B16BFA00E1F71C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4B7BF12227B15AAE00E1F71C /* Category.swift */,
+				4B7BF12427B15C1800E1F71C /* GIFImageData.swift */,
+				4B7BF12827B15CF100E1F71C /* Images.swift */,
+				4B7BF12E27B1671B00E1F71C /* FixedHeight.swift */,
+				4B7BF13A27B1748C00E1F71C /* GiphySingleResponse.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B588FC327B119C100C9AA3E /* Test iOS Videofutur */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B588FEE27B119C200C9AA3E /* Build configuration list for PBXNativeTarget "Test iOS Videofutur" */;
+			buildPhases = (
+				4B588FC027B119C100C9AA3E /* Sources */,
+				4B588FC127B119C100C9AA3E /* Frameworks */,
+				4B588FC227B119C100C9AA3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Test iOS Videofutur";
+			packageProductDependencies = (
+				4B58900C27B12D1600C9AA3E /* Alamofire */,
+				4B58900F27B12EC600C9AA3E /* Kingfisher */,
+			);
+			productName = "Test iOS Videofutur";
+			productReference = 4B588FC427B119C100C9AA3E /* Test iOS Videofutur.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4B588FD927B119C200C9AA3E /* Test iOS VideofuturTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B588FF127B119C200C9AA3E /* Build configuration list for PBXNativeTarget "Test iOS VideofuturTests" */;
+			buildPhases = (
+				4B588FD627B119C200C9AA3E /* Sources */,
+				4B588FD727B119C200C9AA3E /* Frameworks */,
+				4B588FD827B119C200C9AA3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B588FDC27B119C200C9AA3E /* PBXTargetDependency */,
+			);
+			name = "Test iOS VideofuturTests";
+			productName = "Test iOS VideofuturTests";
+			productReference = 4B588FDA27B119C200C9AA3E /* Test iOS VideofuturTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4B588FE327B119C200C9AA3E /* Test iOS VideofuturUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B588FF427B119C200C9AA3E /* Build configuration list for PBXNativeTarget "Test iOS VideofuturUITests" */;
+			buildPhases = (
+				4B588FE027B119C200C9AA3E /* Sources */,
+				4B588FE127B119C200C9AA3E /* Frameworks */,
+				4B588FE227B119C200C9AA3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B588FE627B119C200C9AA3E /* PBXTargetDependency */,
+			);
+			name = "Test iOS VideofuturUITests";
+			productName = "Test iOS VideofuturUITests";
+			productReference = 4B588FE427B119C200C9AA3E /* Test iOS VideofuturUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B588FBC27B119C100C9AA3E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					4B588FC327B119C100C9AA3E = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					4B588FD927B119C200C9AA3E = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 4B588FC327B119C100C9AA3E;
+					};
+					4B588FE327B119C200C9AA3E = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 4B588FC327B119C100C9AA3E;
+					};
+				};
+			};
+			buildConfigurationList = 4B588FBF27B119C100C9AA3E /* Build configuration list for PBXProject "Test iOS Videofutur" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4B588FBB27B119C100C9AA3E;
+			packageReferences = (
+				4B58900B27B12D1600C9AA3E /* XCRemoteSwiftPackageReference "Alamofire" */,
+				4B58900E27B12EC600C9AA3E /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = 4B588FC527B119C100C9AA3E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B588FC327B119C100C9AA3E /* Test iOS Videofutur */,
+				4B588FD927B119C200C9AA3E /* Test iOS VideofuturTests */,
+				4B588FE327B119C200C9AA3E /* Test iOS VideofuturUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B588FC227B119C100C9AA3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B588FD427B119C200C9AA3E /* LaunchScreen.storyboard in Resources */,
+				4B588FD127B119C200C9AA3E /* Assets.xcassets in Resources */,
+				4B588FCF27B119C100C9AA3E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B588FD827B119C200C9AA3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B588FE227B119C200C9AA3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B588FC027B119C100C9AA3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B7BF13327B16ABF00E1F71C /* GIFFullScreenViewModel.swift in Sources */,
+				4B58900127B1219900C9AA3E /* SearchViewController.swift in Sources */,
+				4B7BF13827B16BE900E1F71C /* GIFImageList.swift in Sources */,
+				4B7BF11827B1544600E1F71C /* RandomGIFViewModel.swift in Sources */,
+				4B7BF13D27B1766C00E1F71C /* GIFCollectionViewCell.swift in Sources */,
+				4B7BF13627B16BC900E1F71C /* GIFImage.swift in Sources */,
+				4B7BF13F27B1799700E1F71C /* GIFCellViewModel.swift in Sources */,
+				4B58900627B129B200C9AA3E /* NetworkRequest.swift in Sources */,
+				4B7BF12127B15A2400E1F71C /* GiphyAPIService.swift in Sources */,
+				4B7BF12F27B1671B00E1F71C /* FixedHeight.swift in Sources */,
+				4B588FC827B119C100C9AA3E /* AppDelegate.swift in Sources */,
+				4B588FCA27B119C100C9AA3E /* SceneDelegate.swift in Sources */,
+				4B7BF13B27B1748C00E1F71C /* GiphySingleResponse.swift in Sources */,
+				4B588FFC27B11CF600C9AA3E /* HomeViewController.swift in Sources */,
+				4B58900427B1298D00C9AA3E /* GiphyAPIEndpoint.swift in Sources */,
+				4B7BF12927B15CF100E1F71C /* Images.swift in Sources */,
+				4B58900A27B129E000C9AA3E /* GiphyAPIError.swift in Sources */,
+				4B58900827B129C600C9AA3E /* APIService.swift in Sources */,
+				4B7BF12527B15C1800E1F71C /* GIFImageData.swift in Sources */,
+				4B7BF13127B16A9B00E1F71C /* GIFSearchViewModel.swift in Sources */,
+				4B588FFE27B11D0900C9AA3E /* GIFFullScreenViewController.swift in Sources */,
+				4B7BF12327B15AAE00E1F71C /* Category.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B588FD627B119C200C9AA3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B588FDF27B119C200C9AA3E /* Test_iOS_VideofuturTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B588FE027B119C200C9AA3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B588FE927B119C200C9AA3E /* Test_iOS_VideofuturUITests.swift in Sources */,
+				4B588FEB27B119C200C9AA3E /* Test_iOS_VideofuturUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4B588FDC27B119C200C9AA3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B588FC327B119C100C9AA3E /* Test iOS Videofutur */;
+			targetProxy = 4B588FDB27B119C200C9AA3E /* PBXContainerItemProxy */;
+		};
+		4B588FE627B119C200C9AA3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B588FC327B119C100C9AA3E /* Test iOS Videofutur */;
+			targetProxy = 4B588FE527B119C200C9AA3E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4B588FCD27B119C100C9AA3E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B588FCE27B119C100C9AA3E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4B588FD227B119C200C9AA3E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B588FD327B119C200C9AA3E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4B588FEC27B119C200C9AA3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4B588FED27B119C200C9AA3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4B588FEF27B119C200C9AA3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LX6HN92HPR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Test iOS Videofutur/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kous92.Test-iOS-Videofutur";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4B588FF027B119C200C9AA3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LX6HN92HPR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Test iOS Videofutur/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kous92.Test-iOS-Videofutur";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4B588FF227B119C200C9AA3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LX6HN92HPR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kous92.Test-iOS-VideofuturTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Test iOS Videofutur.app/Test iOS Videofutur";
+			};
+			name = Debug;
+		};
+		4B588FF327B119C200C9AA3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LX6HN92HPR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kous92.Test-iOS-VideofuturTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Test iOS Videofutur.app/Test iOS Videofutur";
+			};
+			name = Release;
+		};
+		4B588FF527B119C200C9AA3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LX6HN92HPR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kous92.Test-iOS-VideofuturUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Test iOS Videofutur";
+			};
+			name = Debug;
+		};
+		4B588FF627B119C200C9AA3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LX6HN92HPR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kous92.Test-iOS-VideofuturUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Test iOS Videofutur";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B588FBF27B119C100C9AA3E /* Build configuration list for PBXProject "Test iOS Videofutur" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B588FEC27B119C200C9AA3E /* Debug */,
+				4B588FED27B119C200C9AA3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B588FEE27B119C200C9AA3E /* Build configuration list for PBXNativeTarget "Test iOS Videofutur" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B588FEF27B119C200C9AA3E /* Debug */,
+				4B588FF027B119C200C9AA3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B588FF127B119C200C9AA3E /* Build configuration list for PBXNativeTarget "Test iOS VideofuturTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B588FF227B119C200C9AA3E /* Debug */,
+				4B588FF327B119C200C9AA3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B588FF427B119C200C9AA3E /* Build configuration list for PBXNativeTarget "Test iOS VideofuturUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B588FF527B119C200C9AA3E /* Debug */,
+				4B588FF627B119C200C9AA3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4B58900B27B12D1600C9AA3E /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		4B58900E27B12EC600C9AA3E /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4B58900C27B12D1600C9AA3E /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B58900B27B12D1600C9AA3E /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		4B58900F27B12EC600C9AA3E /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B58900E27B12EC600C9AA3E /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4B588FBC27B119C100C9AA3E /* Project object */;
+}
