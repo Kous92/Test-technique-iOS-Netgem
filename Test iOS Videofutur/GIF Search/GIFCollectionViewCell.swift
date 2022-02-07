@@ -32,7 +32,7 @@ final class GIFCollectionViewCell: UICollectionViewCell {
         let defaultImage = UIImage(named: "ImageNotAvailable")
         let resource = ImageResource(downloadURL: imageURL)
         gifImage.kf.indicatorType = .activity // Indicateur pendant le téléchargement
-        gifImage.kf.setImage(with: resource, placeholder: defaultImage)
+        gifImage.kf.setImage(with: resource)
     }
     
     override func prepareForReuse() {

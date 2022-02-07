@@ -37,7 +37,7 @@ class HomeViewController: UIViewController {
                 }
             } receiveValue: { [weak self] url in
                 guard let imageURL = URL(string: url) else {
-                    self?.gifImageView.image = UIImage(named: "GIFNotAvailable")
+                    self?.gifImageView.image = UIImage(named: "ImageNotAvailable")
                     return
                 }
                 

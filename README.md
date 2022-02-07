@@ -56,12 +56,18 @@ Pour cette vue simple, un `ViewController` (ici `HomeViewController`) va affiche
 
 ### User story 2
 
-La vue la plus complexe du test.
+La vue la plus complexe du test (`SearchViewController`). Pour la recherche, la vue modèle `GIFSearchViewModel` va réagir par le biais d'un abonnement par rapport à ce qui est saisi dans la barre de recherche. En fonction du contenu, un appel HTTP `GET` se fera automatiquement pour en récupérer la liste des GIFS correspondant à la recherche. Ensuite, avec **Kingfisher**, chaque cellule va afficher ses GIFs respectifs et la vue recevra le signal de la vue modèle pour actualiser le `CollectionView`. 
 
 <img src="https://github.com/Kous92/Test-technique-iOS-Netgem/blob/main/Screenshots/US2iPhone.png" width="250">
 <img src="https://github.com/Kous92/Test-technique-iOS-Netgem/blob/main/Screenshots/US2iPad.png" width="450">
 
 ### User story 3
 
+Au clic sur un GIF du `CollectionView`, une vue `GIFFullScreenViewController` va appraître pour y afficher le GIF en plein écran (avec l'aide de **Kingfisher**).
+
 <img src="https://github.com/Kous92/Test-technique-iOS-Netgem/blob/main/Screenshots/US3iPhone.png" width="250">
 <img src="https://github.com/Kous92/Test-technique-iOS-Netgem/blob/main/Screenshots/US3iPad.png" width="450">
+
+## Autres éléments
+
+Le test étant long dans l'implémentation de l'API et des délais trop courts, je n'ai pas eu le temps de proposer quelques tests unitaires (avec du mocking,...). Pour l'API, j'ai utilisé la voie classique avec des appels HTTP de l'API REST au lieu d'utiliser le SDK de **Giphy**.

@@ -40,7 +40,6 @@ class GIFFullScreenViewController: UIViewController {
 
 extension GIFFullScreenViewController {
     private func setGIF(url: URL) {
-        let defaultImage = UIImage(named: "ImageNotAvailable")
         let resource = ImageResource(downloadURL: url)
         fullScreenGifImage.kf.indicatorType = .activity
         fullScreenGifImage.kf.setImage(with: resource)
