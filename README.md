@@ -53,3 +53,15 @@ Pour cette vue simple, un `ViewController` (ici `HomeViewController`) va affiche
 
 <img src="https://github.com/Kous92/Test-technique-iOS-Netgem/blob/main/Screenshots/US1iPhone.png" width="250">
 <img src="https://github.com/Kous92/Test-technique-iOS-Netgem/blob/main/Screenshots/US1iPad.png" width="450">
+
+### User story 2
+
+La vue la plus complexe du test.
+
+<img src="https://github.com/Kous92/Test-technique-iOS-Netgem/blob/main/Screenshots/US2iPhone.png" width="250">
+<img src="https://github.com/Kous92/Test-technique-iOS-Netgem/blob/main/Screenshots/US2iPad.png" width="450">
+
+### User story 3
+
+<img src="https://github.com/Kous92/Test-technique-iOS-Netgem/blob/main/Screenshots/US3iPhone.png" width="250">
+<img src="https://github.com/Kous92/Test-technique-iOS-Netgem/blob/main/Screenshots/US3iPad.png" width="450">
