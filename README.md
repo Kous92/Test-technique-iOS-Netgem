@@ -52,4 +52,4 @@ Les packages externes sont installés avec **Swift Package Manager**.
 Pour cette vue simple, un `ViewController` (ici `HomeViewController`) va afficher un gif aléatoire. La vue modèle `RandomGIFViewModel` va effectuer un appel API de **Giphy** et récupérer l'URL d'un GIF aléatoire. Par le biais du data binding, la vue va afficher le GIF avec l'aide de **Kingfisher**.
 
 <img src="https://github.com/Kous92/Test-technique-iOS-Netgem/blob/main/Screenshots/US1iPhone.png" width="250">
-<img src="https://github.com/Kous92/SuperNews-iOS-Swift5/blob/main/Screenshots/US1iPad.png" width="450">
+<img src="https://github.com/Kous92/Test-technique-iOS-Netgem/blob/main/Screenshots/US1iPad.png" width="450">
